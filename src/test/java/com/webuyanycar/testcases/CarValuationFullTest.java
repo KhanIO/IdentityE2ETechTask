@@ -1,7 +1,9 @@
+package com.webuyanycar.testcases;
+
 import com.webuyanycar.base.BaseTest;
 import com.webuyanycar.base.Car;
-import com.webuyanycar.pages.HomePage;
 import com.webuyanycar.pages.DetailsPage;
+import com.webuyanycar.pages.HomePage;
 import com.webuyanycar.util.TestUtilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -11,14 +13,14 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class CarValuationTest4 extends BaseTest {
+public class CarValuationFullTest extends BaseTest {
 
     HomePage homePage;
     DetailsPage detailsPage;
     ArrayList<Car> listOfExistingCars = new ArrayList<>();
 
 
-    public CarValuationTest4() {
+    public CarValuationFullTest() {
         super();
 
     }
@@ -31,9 +33,9 @@ public class CarValuationTest4 extends BaseTest {
         detailsPage = new DetailsPage();
         listOfExistingCars= TestUtilities.loadExistingCarData("car_output v4.txt");
         listOfExistingCars.remove(0);
-
     }
 
+     //   Assert.assertEquals("test","test");
 
     @DataProvider
     public Object[] getInputTestData(){
@@ -76,6 +78,7 @@ public class CarValuationTest4 extends BaseTest {
 
     @Test(priority = 5,dataProvider="getInputTestData")
     public void enterDetailsOfCarTest(String vehicleRegistration) {
+
         homePage.clearVehicleMileageTextBox();
         homePage.clearVehicleRegTextBox();
 

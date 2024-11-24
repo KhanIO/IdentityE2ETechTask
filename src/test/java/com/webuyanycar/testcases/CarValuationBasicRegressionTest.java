@@ -1,3 +1,5 @@
+package com.webuyanycar.testcases;
+
 import com.webuyanycar.base.BaseTest;
 import com.webuyanycar.pages.DetailsPage;
 import com.webuyanycar.pages.HomePage;
@@ -6,13 +8,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class CarValuationTest extends BaseTest {
+public class CarValuationBasicRegressionTest extends BaseTest {
 
     HomePage homePage;
     DetailsPage detailsPage;
 
 
-    public CarValuationTest() {
+
+    public CarValuationBasicRegressionTest() {
         super();
 
     }
@@ -51,28 +54,30 @@ public class CarValuationTest extends BaseTest {
         homePage.carValuation();
 
 
+
     }
 
     @Test(priority = 5)
     public void checkVehicleRegistrationTest() {
-        Assert.assertEquals(detailsPage.getCarRegistration(), "AD58VNF");
+        Assert.assertEquals(detailsPage.getCarRegistration(),"AD58VNF");
     }
 
     @Test(priority = 6)
     public void checkVehicleManufacturerTest() {
 
-        Assert.assertEquals(detailsPage.getManufacturer(), "BMW");
+        Assert.assertEquals(detailsPage.getManufacturer(),"BMW");
     }
 
     @Test(priority = 7)
     public void checkVehicleYearTest() {
-        Assert.assertEquals(detailsPage.getYear(), "2008");
+        Assert.assertEquals(detailsPage.getYear(),"2008");
     }
+
 
 
     @Test(priority = 8)
     public void checkModelTest() {
-        Assert.assertEquals(detailsPage.getModel(), "1 SERIES DIESEL COUPE - 120d M Sport 2dr");
+        Assert.assertEquals(detailsPage.getModel(),"1 SERIES DIESEL COUPE - 120d M Sport 2dr");
     }
 
     @AfterTest

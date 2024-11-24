@@ -19,7 +19,6 @@ public class TestUtilities {
 
         ArrayList<Car> carData = new ArrayList<>();
         ArrayList<String> lineOfData = readFile(fileName, "output");
-        System.out.println("this is " + lineOfData);
         for (String data : lineOfData) {
             Object[] VehicleData = data.split(",");
             Car car = new Car(VehicleData[0].toString(), VehicleData[1].toString(), VehicleData[2].toString(), VehicleData[3].toString());
@@ -54,7 +53,6 @@ public class TestUtilities {
                     data.add(line);
                 }
 
-                System.out.println(line);
             }
 
         } catch (IOException e) {
