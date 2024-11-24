@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">webuyanycar.com Test Suite</th></tr>
+<tr><td><a href="#t0">webuyanycar Test Cases</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">73,356</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">webuyanycar.com Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">webuyanycar Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.webuyanycar.testcases.CarValuationFullTest</td><td><a href="#m0">enterDetailsOfCarTest</a></td><td rowspan="2">1732488711773</td><td rowspan="2">21270</td></tr><tr class="failedeven"><td><a href="#m1">enterDetailsOfCarTest</a></td></tr><tr><th colspan="4">webuyanycar Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.webuyanycar.testcases.CarValuationBasicRegressionTest</td><td><a href="#m2">acceptCookiesTest</a></td><td rowspan="1">1732488693352</td><td rowspan="1">213</td></tr><tr class="passedeven"><td><a href="#m3">checkBranchLocatorByPostCodeTest</a></td><td rowspan="1">1732488693635</td><td rowspan="1">3301</td></tr><tr class="passedeven"><td><a href="#m4">checkHomePageTitleTest</a></td><td rowspan="1">1732488693586</td><td rowspan="1">46</td></tr><tr class="passedeven"><td><a href="#m5">checkModelTest</a></td><td rowspan="1">1732488703116</td><td rowspan="1">231</td></tr><tr class="passedeven"><td><a href="#m6">checkVehicleManufacturerTest</a></td><td rowspan="1">1732488702844</td><td rowspan="1">138</td></tr><tr class="passedeven"><td><a href="#m7">checkVehicleRegistrationTest</a></td><td rowspan="1">1732488698764</td><td rowspan="1">4078</td></tr><tr class="passedeven"><td><a href="#m8">checkVehicleYearTest</a></td><td rowspan="1">1732488702984</td><td rowspan="1">131</td></tr><tr class="passedeven"><td><a href="#m9">enterDetailsOfCarTest</a></td><td rowspan="1">1732488696938</td><td rowspan="1">1825</td></tr><tr class="passedodd"><td rowspan="5">com.webuyanycar.testcases.CarValuationFullTest</td><td><a href="#m10">acceptCookiesTest</a></td><td rowspan="1">1732488703349</td><td rowspan="1">569</td></tr><tr class="passedodd"><td><a href="#m11">checkBranchLocatorByPostCodeTest</a></td><td rowspan="1">1732488707928</td><td rowspan="1">87</td></tr><tr class="passedodd"><td><a href="#m12">checkHomePageTitleTest</a></td><td rowspan="1">1732488703920</td><td rowspan="1">4006</td></tr><tr class="passedodd"><td><a href="#m13">enterDetailsOfCarTest</a></td><td rowspan="2">1732488708029</td><td rowspan="2">3743</td></tr><tr class="passedodd"><td><a href="#m14">enterDetailsOfCarTest</a></td></tr></tbody>
+</table>
+<h2>webuyanycar Test Cases</h2><h3 id="m0">com.webuyanycar.testcases.CarValuationFullTest#enterDetailsOfCarTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>BW57BOW</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;details-vrm ng-star-inserted&quot;][1]&quot;}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e4e8bd3e8a5875867f901a2c0ffc79d, findElement {using=xpath, value=//div[@class=&quot;details-vrm ng-star-inserted&quot;][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57834}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57834/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e4e8bd3e8a5875867f901a2c0ffc79d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getAttribute(Unknown Source)
+	at com.webuyanycar.pages.DetailsPage.getCarRegistration(DetailsPage.java:89)
+	at com.webuyanycar.testcases.CarValuationFullTest.enterDetailsOfCarTest(CarValuationFullTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.webuyanycar.testcases.CarValuationFullTest#enterDetailsOfCarTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>SG18HTN</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //div[@class=&quot;details-vrm ng-star-inserted&quot;][1]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getAttribute(Unknown Source)
+	at com.webuyanycar.pages.DetailsPage.getCarRegistration(DetailsPage.java:89)
+	at com.webuyanycar.testcases.CarValuationFullTest.enterDetailsOfCarTest(CarValuationFullTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.webuyanycar.testcases.CarValuationBasicRegressionTest#acceptCookiesTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.webuyanycar.testcases.CarValuationBasicRegressionTest#checkBranchLocatorByPostCodeTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.webuyanycar.testcases.CarValuationBasicRegressionTest#checkHomePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.webuyanycar.testcases.CarValuationBasicRegressionTest#checkModelTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.webuyanycar.testcases.CarValuationBasicRegressionTest#checkVehicleManufacturerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.webuyanycar.testcases.CarValuationBasicRegressionTest#checkVehicleRegistrationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.webuyanycar.testcases.CarValuationBasicRegressionTest#checkVehicleYearTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.webuyanycar.testcases.CarValuationBasicRegressionTest#enterDetailsOfCarTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.webuyanycar.testcases.CarValuationFullTest#acceptCookiesTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.webuyanycar.testcases.CarValuationFullTest#checkBranchLocatorByPostCodeTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.webuyanycar.testcases.CarValuationFullTest#checkHomePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.webuyanycar.testcases.CarValuationFullTest#enterDetailsOfCarTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>AD58VNF</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.webuyanycar.testcases.CarValuationFullTest#enterDetailsOfCarTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>KT17DLX</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
