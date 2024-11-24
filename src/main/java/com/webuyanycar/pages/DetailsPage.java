@@ -17,8 +17,7 @@ public class DetailsPage extends BaseTest {
 
     @FindBy(id = "TelephoneNumber")
     WebElement telephoneNumberTextBox;
-    @FindBy(id = "advance-btn")
-    WebElement getMyValuationBtn;
+
 
     @FindBy(xpath = "//button[@id=\"btn-back\"]")
     WebElement backToHomePageBtn;
