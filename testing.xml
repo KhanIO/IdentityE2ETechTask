@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Webuyanycar.com Test Suite">
+    <test name="webuyanycar Test Cases">
+        <classes>
+            <class name="com.webuyanycar.testcases.CarValuationTest"></class>
+            <class name="com.webuyanycar.testcases.CarValuationTest4"></class>
+        </classes>
+    </test>
+</suite>

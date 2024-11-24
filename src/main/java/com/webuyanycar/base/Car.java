@@ -1,12 +1,16 @@
 package com.webuyanycar.base;
 
-public class Vehicle {
+public class Car {
     private String reg;
     private String make;
     private String year;
     private String model;
 
-    public Vehicle(){
+    public Car(String reg, String make, String model, String year) {
+        this.reg = reg;
+        this.make = make;
+        this.year = year;
+        this.model = model;
 
     }
 
@@ -42,10 +46,9 @@ public class Vehicle {
         return year;
     }
 
-    public String toString(){
-        String vehicle = ("VARIANT_REG: " + getReg()+"MAKE: "+ getMake()+"MODEL: "+ getModel() +
-                "YEAR: "+ getYear());
+    public String toString() {
+        return ("VARIANT_REG: " + getReg() + "MAKE: " + getMake() + "MODEL: " + getModel() +
+                "YEAR: " + getYear());
 
-        return vehicle;
     }
 }

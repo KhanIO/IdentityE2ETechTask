@@ -1,6 +1,8 @@
+package com.webuyanycar.testcases;
+
 import com.webuyanycar.base.BaseTest;
-import com.webuyanycar.pages.HomePage;
 import com.webuyanycar.pages.DetailsPage;
+import com.webuyanycar.pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

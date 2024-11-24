@@ -1,7 +1,9 @@
+package com.webuyanycar.testcases;
+
 import com.webuyanycar.base.BaseTest;
 import com.webuyanycar.base.Car;
-import com.webuyanycar.pages.HomePage;
 import com.webuyanycar.pages.DetailsPage;
+import com.webuyanycar.pages.HomePage;
 import com.webuyanycar.util.TestUtilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -31,7 +33,6 @@ public class CarValuationTest4 extends BaseTest {
         detailsPage = new DetailsPage();
         listOfExistingCars= TestUtilities.loadExistingCarData("car_output v4.txt");
         listOfExistingCars.remove(0);
-        Assert.assertEquals("test","test");
     }
 
      //   Assert.assertEquals("test","test");
@@ -77,7 +78,7 @@ public class CarValuationTest4 extends BaseTest {
 
     @Test(priority = 5,dataProvider="getInputTestData")
     public void enterDetailsOfCarTest(String vehicleRegistration) {
-        Assert.assertEquals("test","test");
+
         homePage.clearVehicleMileageTextBox();
         homePage.clearVehicleRegTextBox();
 
@@ -87,7 +88,7 @@ public class CarValuationTest4 extends BaseTest {
 
 
 
-        Assert.assertEquals(detailsPage.getCarRegistration().toString(),vehicleRegistration.replaceAll("\\s",""),"Could not find vehicle");
+        Assert.assertEquals(detailsPage.getCarRegistration(),vehicleRegistration.replaceAll("\\s",""),"Could not find vehicle");
 
 
         for (Car car : listOfExistingCars) {
